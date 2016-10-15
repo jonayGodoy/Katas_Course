@@ -15,11 +15,11 @@ public class FizzBuzz {
     public String getPositionList(int position) {
 
         if((position % 3 == 0)){
-            listNumbers[position-1] = "Fizz";
+            listNumbers[position] = "Fizz";
         }else {
-            listNumbers[position-1] = String.valueOf(position);
+            listNumbers[position] = String.valueOf(position+1);
         }
 
-        return listNumbers[position-1];
+        return listNumbers[position];
     }
 }
