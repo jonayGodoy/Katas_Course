@@ -37,7 +37,7 @@ public class FizzBuzzTest {
     public void position_101_Return_ArrayIndexOutException(){
         FizzBuzz fb = new FizzBuzz();
 
-        fb.getPositionList(100);
+        fb.getPositionList(101);
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
