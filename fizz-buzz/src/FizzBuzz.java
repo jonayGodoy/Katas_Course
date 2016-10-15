@@ -7,6 +7,9 @@ public class FizzBuzz {
 
 
     public int getPositionList(int position) {
-        return 1;
+
+
+        return position;
+
     }
 }
