@@ -40,4 +40,12 @@ public class FizzBuzzTest {
         fb.getPositionList(100);
     }
 
+    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    public void positionNegativeReturnArrayIndexOutException(){
+        FizzBuzz fb = new FizzBuzz();
+
+        fb.getPositionList(-1);
+    }
+
+
 }
