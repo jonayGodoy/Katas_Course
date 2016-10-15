@@ -20,7 +20,7 @@ public class FizzBuzzTest {
 
         String position = fb.getPositionList(1);
 
-        assertEquals(1,position);
+        assertEquals("1",position);
     }
 
 
@@ -30,7 +30,7 @@ public class FizzBuzzTest {
 
         String position = fb.getPositionList(2);
 
-        assertEquals(2,position);
+        assertEquals("2",position);
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
