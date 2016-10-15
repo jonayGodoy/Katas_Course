@@ -25,6 +25,18 @@ public class FizzBuzzTest {
 
 
     @Test
+    public void second_Position1_Return_Position1(){
+        FizzBuzz fb = new FizzBuzz();
+
+        String [] arrayString = fb.getListNumbers();
+        String position = fb.getPositionList(2);
+
+        assertEquals(arrayString[2],position);
+    }
+
+
+
+    @Test
     public void second_Position_Return_2(){
         FizzBuzz fb = new FizzBuzz();
 
