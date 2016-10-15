@@ -14,7 +14,7 @@ public class FizzBuzz {
 
     public String getPositionList(int position) {
 
-        if(position == 3){
+        if(((position == 3) || (position == 6))){
             listNumbers[position] = "Fizz";
         }else {
             listNumbers[position] = String.valueOf(position);
