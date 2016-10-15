@@ -7,8 +7,8 @@ public class FizzBuzz {
         listNumbers = new String[100];
     }
 
-    public String[] getListNumbers() {
-        return listNumbers;
+    public int getLength() {
+        return listNumbers.length;
     }
 
 
@@ -17,7 +17,7 @@ public class FizzBuzz {
         if((position % 3 == 0)){
             listNumbers[position] = "Fizz";
         }else {
-            listNumbers[position] = String.valueOf(position+1);
+            listNumbers[position] = String.valueOf(position);
         }
 
         return listNumbers[position];

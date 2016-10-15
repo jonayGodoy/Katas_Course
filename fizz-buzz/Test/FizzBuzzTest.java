@@ -9,9 +9,9 @@ public class FizzBuzzTest {
     public void create_Array_Hundred_Numbers(){
         FizzBuzz fb = new FizzBuzz();
 
-        String[] listNumbers = fb.getListNumbers();
+        int sizeArray = fb.getLength();
 
-        assertEquals(100,listNumbers.length);
+        assertEquals(100,sizeArray);
     }
 
     @Test
@@ -22,18 +22,6 @@ public class FizzBuzzTest {
 
         assertEquals("1",position);
     }
-
-
-    @Test
-    public void second_Position1_Return_Position1(){
-        FizzBuzz fb = new FizzBuzz();
-
-        String [] arrayString = fb.getListNumbers();
-        String position = fb.getPositionList(2);
-
-        assertEquals(arrayString[2],position);
-    }
-
 
 
     @Test
