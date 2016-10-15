@@ -18,9 +18,20 @@ public class FizzBuzzTest {
     public void firstPositionReturn1(){
         FizzBuzz fb = new FizzBuzz();
 
-        int firstPosition = fb.getPositionList();
+        int position = fb.getPositionList(1);
 
-        assertEquals(1,firstPosition);
+        assertEquals(1,position);
     }
+
+
+    @Test
+    public void secondPositionReturn2(){
+        FizzBuzz fb = new FizzBuzz();
+
+        int position = fb.getPositionList(2);
+
+        assertEquals(2,position);
+    }
+
 
 }
