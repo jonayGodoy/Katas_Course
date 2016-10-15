@@ -73,4 +73,20 @@ public class FizzBuzzTest {
 
         assertEquals("Fizz",position);
     }
+
+
+    @Test
+    public void positions_multiples_3_return_Fizz_from_1_to_100(){
+        FizzBuzz fb = new FizzBuzz();
+
+        int multiple3 = (int)Math.floor(Math.random()*(0-101)+101) *3;
+
+        String position = fb.getPositionList(multiple3);
+
+        assertEquals("Fizz",position);
+    }
+
+
+
+
 }
