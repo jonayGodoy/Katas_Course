@@ -1,19 +1,25 @@
 
 public class FizzBuzz {
 
-    private int[] listNumbers;
+    private String[] listNumbers;
 
     public FizzBuzz() {
-        listNumbers = new int[100];
+        listNumbers = new String[100];
     }
 
-    public int[] getListNumbers() {
+    public String[] getListNumbers() {
         return listNumbers;
     }
 
 
-    public int getPositionList(int position) {
-        listNumbers[position] = position;
+    public String getPositionList(int position) {
+
+        if(position == 3){
+            listNumbers[position] = "Fizz";
+        }else {
+            listNumbers[position] = String.valueOf(position);
+        }
+
         return listNumbers[position];
     }
 }

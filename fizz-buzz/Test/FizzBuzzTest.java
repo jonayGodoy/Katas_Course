@@ -9,7 +9,7 @@ public class FizzBuzzTest {
     public void create_Array_Hundred_Numbers(){
         FizzBuzz fb = new FizzBuzz();
 
-        int[] listNumbers = fb.getListNumbers();
+        String[] listNumbers = fb.getListNumbers();
 
         assertEquals(100,listNumbers.length);
     }
@@ -18,7 +18,7 @@ public class FizzBuzzTest {
     public void first_Position_Return_1(){
         FizzBuzz fb = new FizzBuzz();
 
-        int position = fb.getPositionList(1);
+        String position = fb.getPositionList(1);
 
         assertEquals(1,position);
     }
@@ -28,7 +28,7 @@ public class FizzBuzzTest {
     public void second_Position_Return_2(){
         FizzBuzz fb = new FizzBuzz();
 
-        int position = fb.getPositionList(2);
+        String position = fb.getPositionList(2);
 
         assertEquals(2,position);
     }
@@ -51,7 +51,7 @@ public class FizzBuzzTest {
     public void position_3_return_Fizz(){
         FizzBuzz fb = new FizzBuzz();
 
-        int position = fb.getPositionList(3);
+        String position = fb.getPositionList(3);
 
         assertEquals("Fizz",position);
     }
