@@ -14,6 +14,13 @@ public class FizzBuzzTest {
         assertEquals(100,listNumbers.length);
     }
 
+    @Test
+    public void firstPositionReturn1(){
+        FizzBuzz fb = new FizzBuzz();
 
+        int firstPosition = fb.getPositionList();
+
+        assertEquals(1,firstPosition);
+    }
 
 }
