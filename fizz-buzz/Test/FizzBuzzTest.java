@@ -6,7 +6,7 @@ public class FizzBuzzTest {
 
 
     @Test
-    public void createArrayHundredNumbers(){
+    public void create_Array_Hundred_Numbers(){
         FizzBuzz fb = new FizzBuzz();
 
         int[] listNumbers = fb.getListNumbers();
@@ -15,7 +15,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void firstPositionReturn1(){
+    public void first_Position_Return1(){
         FizzBuzz fb = new FizzBuzz();
 
         int position = fb.getPositionList(1);
@@ -25,7 +25,7 @@ public class FizzBuzzTest {
 
 
     @Test
-    public void secondPositionReturn2(){
+    public void second_Position_Return2(){
         FizzBuzz fb = new FizzBuzz();
 
         int position = fb.getPositionList(2);
@@ -34,18 +34,22 @@ public class FizzBuzzTest {
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
-    public void position101ReturnArrayIndexOutException(){
+    public void position_101_ReturnArrayIndexOutException(){
         FizzBuzz fb = new FizzBuzz();
 
         fb.getPositionList(100);
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
-    public void positionNegativeReturnArrayIndexOutException(){
+    public void position_Negative_ReturnArrayIndexOutException(){
         FizzBuzz fb = new FizzBuzz();
 
         fb.getPositionList(-1);
     }
+
+
+
+
 
 
 }
