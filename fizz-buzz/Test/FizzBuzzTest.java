@@ -9,12 +9,10 @@ public class FizzBuzzTest {
     public void createArrayHundredNumbers(){
         FizzBuzz fb = new FizzBuzz();
 
-        int [] listNumbers = new int[99];
+        int[] listNumbers = fb.getListNumbers();
 
         assertEquals(100,listNumbers.length);
     }
-
-
 
 
 
