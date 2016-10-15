@@ -33,6 +33,11 @@ public class FizzBuzzTest {
         assertEquals(2,position);
     }
 
+    @Test(expected = NullPointerException.class)
+    public void position101ReturnNullPointerException(){
+        FizzBuzz fb = new FizzBuzz();
 
+        fb.getPositionList(100);
+    }
 
 }
