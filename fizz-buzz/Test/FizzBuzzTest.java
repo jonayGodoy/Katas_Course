@@ -76,10 +76,10 @@ public class FizzBuzzTest {
 
 
     @Test
-    public void positions_multiples_3_return_Fizz_from_1_to_100(){
+    public void positions_multiples_3_return_Fizz_from_1_to_33(){
         FizzBuzz fb = new FizzBuzz();
 
-        int multiple3 = (int)Math.floor(Math.random()*(0-101)+101) *3;
+        int multiple3 = (int)Math.floor(Math.random()*(1-33)+33) *3;
 
         String position = fb.getPositionList(multiple3);
 
