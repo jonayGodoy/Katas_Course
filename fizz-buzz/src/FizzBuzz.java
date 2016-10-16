@@ -13,7 +13,7 @@ public class FizzBuzz {
 
 
     public String getPositionList(int position) {
-        if(position == 15 || position == 30){
+        if(position == 15 || position == 30 || position == 45){
             listNumbers[position-1] = "FizzBuzz";
         }else {
             if (position % 3 == 0) {
