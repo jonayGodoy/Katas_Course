@@ -131,10 +131,14 @@ public class FizzBuzzTest {
 
 
     @Test
-    public void positions_multiples_3_return_Fizz_from_1_to_33(){
+    public void positions_multiples_3_return_Fizz_from_1_to_33_than_not_multiples5(){
         FizzBuzz fb = new FizzBuzz();
 
-        int numberMultiple3 = (int)Math.floor(Math.random()*(1-33)+33) *3;
+        int numberMultiple3 = 5;
+
+        while(numberMultiple3 % 5 == 0) {
+            numberMultiple3 = (int) Math.floor(Math.random() * (1 - 33) + 33) * 3;
+        }
 
         String position = fb.getPositionList(numberMultiple3);
 
@@ -143,10 +147,14 @@ public class FizzBuzzTest {
 
 
     @Test
-    public void positions_multiples_5_return_Buzz_from_1_to_20(){
+    public void positions_multiples_5_return_Buzz_from_1_to_20_than_not_multiples3(){
         FizzBuzz fb = new FizzBuzz();
 
-        int numberMultiple5 = (int)Math.floor(Math.random()*(1-20)+20) *5;
+        int numberMultiple5 = 3;
+
+        while(numberMultiple5 % 3 == 0) {
+            numberMultiple5 = (int) Math.floor(Math.random() * (1 - 20) + 20) * 5;
+        }
 
         String position = fb.getPositionList(numberMultiple5);
 
