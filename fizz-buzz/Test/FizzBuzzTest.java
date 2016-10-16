@@ -119,6 +119,8 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz",position);
     }
 
+
+
     @Test
     public void positions_multiples_3_return_Fizz_from_1_to_33(){
         FizzBuzz fb = new FizzBuzz();
