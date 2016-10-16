@@ -30,7 +30,7 @@ public class FizzBuzzTest {
 
         String position = fb.getPositionList(2);
 
-        assertEquals("2",position);
+        assertEquals("2", position);
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
@@ -133,9 +133,7 @@ public class FizzBuzzTest {
     @Test
     public void positions_multiples_3_return_Fizz_from_1_to_33_than_not_multiples5(){
         FizzBuzz fb = new FizzBuzz();
-
         int numberMultiple3 = 5;
-
         while(numberMultiple3 % 5 == 0) {
             numberMultiple3 = (int) Math.floor(Math.random() * (1 - 33) + 33) * 3;
         }
@@ -149,9 +147,7 @@ public class FizzBuzzTest {
     @Test
     public void positions_multiples_5_return_Buzz_from_1_to_20_than_not_multiples3(){
         FizzBuzz fb = new FizzBuzz();
-
         int numberMultiple5 = 3;
-
         while(numberMultiple5 % 3 == 0) {
             numberMultiple5 = (int) Math.floor(Math.random() * (1 - 20) + 20) * 5;
         }
@@ -160,6 +156,19 @@ public class FizzBuzzTest {
 
         assertEquals("Buzz",position);
     }
+
+    @Test
+    public void positions_multiples_15_return_FizzBuzz_from_1_to_6(){
+        FizzBuzz fb = new FizzBuzz();
+
+        int numberMultiple15 = (int) Math.floor(Math.random() * (1 - 6) + 6) * 15;
+
+
+        String position = fb.getPositionList(numberMultiple15);
+
+        assertEquals("FizzBuzz",position);
+    }
+
 
 
 }
