@@ -110,6 +110,14 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz",position);
     }
 
+    @Test
+    public void position_30_return_FizzBuzz(){
+        FizzBuzz fb = new FizzBuzz();
+
+        String position = fb.getPositionList(30);
+
+        assertEquals("FizzBuzz",position);
+    }
 
     @Test
     public void positions_multiples_3_return_Fizz_from_1_to_33(){
