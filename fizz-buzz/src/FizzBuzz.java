@@ -17,7 +17,7 @@ public class FizzBuzz {
         if(position % 3 == 0){
             listNumbers[position-1] = "Fizz";
         }else {
-            if ((position == 5) || (position == 10) || (position == 20)) {
+            if ((position % 5 == 0)) {
                 listNumbers[position - 1] = "Buzz";
             } else {
                 listNumbers[position - 1] = String.valueOf(position);

@@ -116,6 +116,16 @@ public class FizzBuzzTest {
     }
 
 
+    @Test
+    public void positions_multiples_5_return_Buzz_from_1_to_20(){
+        FizzBuzz fb = new FizzBuzz();
+
+        int numberMultiple5 = (int)Math.floor(Math.random()*(1-20)+20) *5;
+
+        String position = fb.getPositionList(numberMultiple5);
+
+        assertEquals("Buzz",position);
+    }
 
 
 }
