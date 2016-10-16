@@ -5,27 +5,47 @@ public class FizzBuzz {
 
     public FizzBuzz() {
         listNumbers = new String[100];
+        generatePositions();
     }
 
     public int getLength() {
         return listNumbers.length;
     }
 
-
-    public String getPositionList(int position) {
-        if(position % 15 == 0){
-            listNumbers[position-1] = "FizzBuzz";
-        }else {
-            if (position % 3 == 0) {
-                listNumbers[position - 1] = "Fizz";
-            } else {
-                if ((position % 5 == 0)) {
-                    listNumbers[position - 1] = "Buzz";
-                } else {
-                    listNumbers[position - 1] = String.valueOf(position);
-                }
-            }
+    private void generatePositions(){
+        for(int i =0; i < listNumbers.length;i++){
+            listNumbers[i]= generatePosition(i+1);
         }
+    }
+
+    private String generatePosition(int position){
+        if(isFizzBuzz(position)){
+            return "FizzBuzz";
+        }
+        if (isFizz(position)) {
+                 return "Fizz";
+            }
+        if (isBuzz(position)) {
+                return "Buzz";
+        }
+
+        return String.valueOf(position);
+    }
+
+
+    public String getPositionList(int position){
         return listNumbers[position-1];
+    }
+
+    private boolean isBuzz(int position) {
+        return position % 5 == 0;
+    }
+
+    private boolean isFizz(int position) {
+        return position % 3 == 0;
+    }
+
+    private boolean isFizzBuzz(int position) {
+        return (isFizz(position) && isBuzz(position));
     }
 }
