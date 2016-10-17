@@ -151,7 +151,7 @@ public class FizzBuzzTest {
     public void number_contains_3_returnFizz_and_not_Buzz(){
         FizzBuzz fb = new FizzBuzz();
         int numberOnlyContains3 = 3;
-        while(!(String.valueOf (numberOnlyContains3).contains("3")) && (numberOnlyContains3 % 3 == 0)
+        while(!(String.valueOf (numberOnlyContains3).contains("3"))
                 && (numberOnlyContains3 % 5 == 0) && !(String.valueOf (numberOnlyContains3).contains("5"))) {
             numberOnlyContains3 = (int) Math.floor(Math.random() * (1 - 100) + 100);
         }

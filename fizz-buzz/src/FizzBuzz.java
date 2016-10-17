@@ -38,7 +38,7 @@ public class FizzBuzz {
     }
 
     private boolean isBuzz(int position) {
-        return position % 5 == 0;
+        return (position % 5 == 0) || (String.valueOf(position).contains("5")) ;
     }
 
     private boolean isFizz(int position) {
