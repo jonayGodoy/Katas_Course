@@ -164,10 +164,10 @@ public class FizzBuzzTest {
 
 
     @Test
-    public void positions_multiples_3_return_Fizz_from_1_to_33_than_not_multiples5(){
+        public void positions_multiples_3_return_Fizz_from_1_to_33_and_not_Buzz(){
         FizzBuzz fb = new FizzBuzz();
         int numberMultiple3 = 5;
-        while(numberMultiple3 % 5 == 0 ) {
+        while(numberMultiple3 % 5 == 0 || (String.valueOf(numberMultiple3).contains("5"))) {
             numberMultiple3 = (int) Math.floor(Math.random() * (1 - 33) + 33) * 3;
         }
 
