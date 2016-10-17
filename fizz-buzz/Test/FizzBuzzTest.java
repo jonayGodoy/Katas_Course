@@ -138,7 +138,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void postion_52_returnBuzz(){
+    public void position_52_returnBuzz(){
         FizzBuzz fb = new FizzBuzz();
 
         String position = fb.getPositionList(52);
@@ -146,6 +146,15 @@ public class FizzBuzzTest {
         assertEquals("Buzz",position);
     }
 
+
+    @Test
+    public void position_53_returnBuzz(){
+        FizzBuzz fb = new FizzBuzz();
+
+        String position = fb.getPositionList(53);
+
+        assertEquals("FizzBuzz",position);
+    }
 
     @Test
     public void number_contains_3_returnFizz_and_not_Buzz(){
