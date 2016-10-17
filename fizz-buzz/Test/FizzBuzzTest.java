@@ -128,7 +128,14 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz",position);
     }
 
+    @Test
+    public void position_13_returnFizz(){
+        FizzBuzz fb = new FizzBuzz();
 
+        String position = fb.getPositionList(13);
+
+        assertEquals("Fizz",position);
+    }
 
     @Test
     public void positions_multiples_3_return_Fizz_from_1_to_33_than_not_multiples5(){
@@ -160,9 +167,7 @@ public class FizzBuzzTest {
     @Test
     public void positions_multiples_15_return_FizzBuzz_from_1_to_6(){
         FizzBuzz fb = new FizzBuzz();
-
         int numberMultiple15 = (int) Math.floor(Math.random() * (1 - 6) + 6) * 15;
-
 
         String position = fb.getPositionList(numberMultiple15);
 
