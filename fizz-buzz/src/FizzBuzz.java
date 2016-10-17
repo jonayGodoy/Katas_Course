@@ -28,7 +28,6 @@ public class FizzBuzz {
         if (isBuzz(position)) {
                 return "Buzz";
         }
-
         return String.valueOf(position);
     }
 
