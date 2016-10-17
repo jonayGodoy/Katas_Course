@@ -156,12 +156,27 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz",position);
     }
 
+
+    @Test
+    public void number_contains_3_and_5_returnFizzBuzz(){
+        FizzBuzz fb = new FizzBuzz();
+        int numberContains3and5 = 0;
+        while(!(String.valueOf (numberContains3and5).contains("3")) || !(String.valueOf (numberContains3and5).contains("5"))) {
+            numberContains3and5 = (int) Math.floor(Math.random() * (1 - 100) + 100);
+        }
+
+        String position = fb.getPositionList(numberContains3and5);
+
+        assertEquals("FizzBuzz",position);
+    }
+
+
     @Test
     public void number_contains_3_returnFizz_and_not_Buzz(){
         FizzBuzz fb = new FizzBuzz();
         int numberOnlyContains3 = 3;
         while(!(String.valueOf (numberOnlyContains3).contains("3"))
-                && (numberOnlyContains3 % 5 == 0) && !(String.valueOf (numberOnlyContains3).contains("5"))) {
+                && (numberOnlyContains3 % 5 == 0) && (String.valueOf (numberOnlyContains3).contains("5"))) {
             numberOnlyContains3 = (int) Math.floor(Math.random() * (1 - 100) + 100);
         }
 
@@ -208,7 +223,6 @@ public class FizzBuzzTest {
 
         assertEquals("FizzBuzz",position);
     }
-
 
 
 }
