@@ -138,6 +138,16 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void postion_52_returnBuzz(){
+        FizzBuzz fb = new FizzBuzz();
+
+        String position = fb.getPositionList(52);
+
+        assertEquals("Buzz",position);
+    }
+
+
+    @Test
     public void number_contains_3_returnFizz_and_not_Buzz(){
         FizzBuzz fb = new FizzBuzz();
         int numberOnlyContains3 = 3;
